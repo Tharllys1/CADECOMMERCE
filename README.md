@@ -132,14 +132,26 @@ Permite cadastrar produtos com seleção de categoria e marca.
 4. Acesse `index.php`.
 
 ---
-## Métodos 
-**mysqli-** Este é um objeto que representa a conexão com o banco de dados MySQL e contém vários métodos e propriedades para interação com o banco.
 
-**mysqli_query-** Este método executa uma consulta SQL no banco de dados.
+## Métodos PHP
 
-**mysqli_close-** Este método encerra a conexão previamente aberta com o banco de dados.
+### **mysqli**
 
-**mysqli_close-** Retorna uma string contendo a descrição do erro mais recente ocorrido na conexão ou na operação MySQLi.
+O objeto `mysqli` representa a conexão com o banco de dados MySQL e fornece vários métodos e propriedades para interagir com o banco de dados.
+
+### **mysqli_query**
+
+Executa uma consulta SQL no banco de dados. Retorna `true` em caso de sucesso ou `false` em caso de falha.
+
+### **mysqli_close**
+
+Encerra a conexão previamente aberta com o banco de dados. É uma boa prática fechar a conexão após concluir as operações.
+
+### **mysqli_error**
+
+Retorna uma string contendo a descrição do erro mais recente ocorrido na conexão ou na operação MySQLi. Útil para depuração.
+
+---
 
 ## Imagens
 
@@ -160,4 +172,3 @@ Permite cadastrar produtos com seleção de categoria e marca.
 
 ![Cadastro de Categorias 1](https://github.com/user-attachments/assets/0a68a919-392e-4948-bc4c-1773f1a07c88)
 ![Cadastro de Categorias 2](https://github.com/user-attachments/assets/df8370a3-0598-4a8c-9464-182fc437e595)
-

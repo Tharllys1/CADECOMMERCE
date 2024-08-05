@@ -23,47 +23,6 @@ Gerencia um carrinho de compras.
 - `js/script.js`: Scripts personalizados.
 - `controller/carrinho-busca.php`: Busca de produtos.
 
-#### Métodos PHP
-
-- `index.php`: Gerencia a sessão do carrinho, adiciona e remove produtos.
-
-    ```php
-    <?php
-    session_start();
-    if (!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = array();
-    }
-
-    if (isset($_POST['add_to_cart'])) {
-        $product_id = $_POST['product_id'];
-        if (!in_array($product_id, $_SESSION['cart'])) {
-            $_SESSION['cart'][] = $product_id;
-        }
-    }
-
-    if (isset($_POST['remove_from_cart'])) {
-        $product_id = $_POST['product_id'];
-        if (($key = array_search($product_id, $_SESSION['cart'])) !== false) {
-            unset($_SESSION['cart'][$key]);
-        }
-    }
-    ?>
-    ```
-
-- `controller/carrinho-busca.php`: Simula a busca de produtos.
-
-    ```php
-    <?php
-    $products = array(
-        array("id" => 1, "name" => "Produto 1", "price" => 10.0),
-        array("id" => 2, "name" => "Produto 2", "price" => 20.0),
-        array("id" => 3, "name" => "Produto 3", "price" => 30.0)
-    );
-
-    echo json_encode($products);
-    ?>
-    ```
-
 #### Execução
 
 1. Clone o repositório.
@@ -82,28 +41,6 @@ Permite cadastrar novas categorias.
 - `index.php`: Formulário de cadastro.
 - `css/style.css`: Estilos.
 - `insere-categoria.php`: Cadastro de categoria.
-
-#### Métodos PHP
-
-- `insere-categoria.php`: Insere uma nova categoria no banco de dados.
-
-    ```php
-    <?php
-    include('controller/conexao.php');
-
-    $descricao = $_POST['descricao'];
-
-    $cad_categoria = "INSERT INTO categoria(DESCRICAO) VALUES ('$descricao')";
-
-    if(mysqli_query($mysqli, $cad_categoria)){
-        echo "Nova categoria cadastrada com sucesso";
-    } else {
-        echo "Erro: " . $cad_categoria . "<br>" . mysqli_error($mysqli);
-    }
-
-    mysqli_close($mysqli);
-    ?>
-    ```
 
 #### Execução
 
@@ -127,52 +64,6 @@ Gerencia pedidos de compra.
 - `controller/produtos-busca.php`: Busca de produtos.
 - `carrinho.php`: Página do carrinho.
 
-#### Métodos PHP
-
-- `controller/produtos-busca.php`: Simula a busca de produtos.
-
-    ```php
-    <?php
-    $products = array(
-        array("id" => 1, "name" => "Produto 1", "price" => 10.0),
-        array("id" => 2, "name" => "Produto 2", "price" => 20.0),
-        array("id" => 3, "name" => "Produto 3", "price" => 30.0)
-    );
-
-    echo json_encode($products);
-    ?>
-    ```
-
-- `carrinho.php`: Exibe os produtos no carrinho.
-
-    ```php
-    <?php
-    session_start();
-    if (!isset($_SESSION['cart'])) {
-        $_SESSION['cart'] = array();
-    }
-    ?>
-
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-    <meta charset="UTF-8">
-    <title>Carrinho de Compras</title>
-    <link rel="stylesheet" href="css/style.css">
-    </head>
-    <body>
-    <h1>Carrinho de Compras</h1>
-    <ul>
-    <?php
-    foreach ($_SESSION['cart'] as $product_id) {
-        echo "<li>Produto ID: $product_id</li>";
-    }
-    ?>
-    </ul>
-    </body>
-    </html>
-    ```
-
 #### Execução
 
 1. Clone o repositório.
@@ -191,38 +82,6 @@ Permite cadastrar novas marcas.
 - `index.php`: Formulário de cadastro.
 - `css/style.css`: Estilos.
 - `insere-marca.php`: Cadastro de marca.
-
-#### Métodos PHP
-
-- `insere-marca.php`: Insere uma nova marca no banco de dados.
-
-    ```php
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "meu_banco";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Conexão falhou: " . $conn->connect_error);
-    }
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $marca = $_POST['marca'];
-
-        $sql = "INSERT INTO marcas (nome) VALUES ('$marca')";
-        if ($conn->query($sql) === TRUE) {
-            echo "Marca cadastrada com sucesso!";
-        } else {
-            echo "Erro: " . $sql . "<br>" . $conn->error;
-        }
-    }
-
-    $conn->close();
-    ?>
-    ```
 
 #### Execução
 
@@ -245,26 +104,6 @@ Mostra o resumo do pedido.
 - `js/script.js`: Scripts personalizados.
 - `controller/produtos-resumo.php`: Resumo do pedido.
 
-#### Métodos PHP
-
-- `controller/produtos-resumo.php`: Gera o resumo do pedido baseado nos itens do carrinho.
-
-    ```php
-    <?php
-    session_start();
-    $order_summary = array();
-
-    if (isset($_SESSION['cart'])) {
-        foreach ($_SESSION['cart'] as $product_id) {
-            $product = array("id" => $product_id, "name" => "Produto $product_id", "price" => $product_id * 10);
-            $order_summary[] = $product;
-        }
-    }
-
-    echo json_encode($order_summary);
-    ?>
-    ```
-
 #### Execução
 
 1. Clone o repositório.
@@ -284,48 +123,6 @@ Permite cadastrar produtos com seleção de categoria e marca.
 - `css/style.css`: Estilos.
 - `insere-produto.php`: Inserção de produto.
 - `controller/conexao.php`: Conexão com o banco de dados.
-
-#### Métodos PHP
-
-- `controller/conexao.php`: Estabelece a conexão com o banco de dados.
-
-    ```php
-    <?php
-    $servername = "localhost";
-    $username = "root";
-    $password = "";
-    $dbname = "meu_banco";
-
-    $conn = new mysqli($servername, $username, $password, $dbname);
-
-    if ($conn->connect_error) {
-        die("Conexão falhou: " . $conn->connect_error);
-    }
-    ?>
-    ```
-
-- `insere-produto.php`: Insere um novo produto no banco de dados.
-
-    ```php
-    <?php
-    include 'controller/conexao.php';
-
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-        $produto = $_POST['produto'];
-        $categoria = $_POST['categoria'];
-        $marca = $_POST['marca'];
-
-        $sql = "INSERT INTO produtos (nome, categoria_id, marca_id) VALUES ('$produto', '$categoria', '$marca')";
-        if ($conn->query($sql) === TRUE) {
-            echo "Produto cadastrado com sucesso!";
-        } else {
-            echo "Erro: " . $sql . "<br>" . $conn->error;
-        }
-    }
-
-    $conn->close();
-    ?>
-    ```
 
 #### Execução
 

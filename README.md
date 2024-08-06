@@ -157,22 +157,23 @@ Retorna uma string contendo a descrição do erro mais recente ocorrido na conex
 
 ### Pedido de Compra
 
-![Pedido de Compra](![image](https://github.com/user-attachments/assets/faf25626-39c7-465d-b258-4588a131f599)
+(![image](https://github.com/user-attachments/assets/faf25626-39c7-465d-b258-4588a131f599)
 
 
 ### Estrutura da Página
 
-![Estrutura da Página](https://github.com/user-attachments/assets/94718ad2-2b8c-4ee6-98a4-cc09b38a88eb)
+(![Captura de tela 2024-08-06 082836](https://github.com/user-attachments/assets/2a394b9a-40d5-44f7-9b02-405c649d67e5)
+
 
 ### Cadastro de Marcas
 
-![Cadastro de Marcas 1](https://github.com/user-attachments/assets/b1525c30-0a70-4a2f-88f3-263a3fa576a3)
-![Cadastro de Marcas 2](https://github.com/user-attachments/assets/233e9404-1462-4173-9af4-a59fc04a2336)
+(![Captura de tela 2024-08-06 083114](https://github.com/user-attachments/assets/6ce23b62-8dfb-44cb-8224-ce3ba074043d)
+
 
 ### Cadastro de Categorias
 
-![Cadastro de Categorias 1](https://github.com/user-attachments/assets/0a68a919-392e-4948-bc4c-1773f1a07c88)
-![Cadastro de Categorias 2](https://github.com/user-attachments/assets/df8370a3-0598-4a8c-9464-182fc437e595)
+(![Captura de tela 2024-08-06 083344](https://github.com/user-attachments/assets/8f0da0d4-d8d2-4340-8589-58e91b7e9152)
+
 
 ##Autor
 - Tharllys 

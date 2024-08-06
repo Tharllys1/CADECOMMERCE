@@ -157,7 +157,8 @@ Retorna uma string contendo a descrição do erro mais recente ocorrido na conex
 
 ### Pedido de Compra
 
-![Pedido de Compra](https://github.com/user-attachments/assets/10a7e641-430e-43cb-91ce-42118876a903)
+![Pedido de Compra](![image](https://github.com/user-attachments/assets/faf25626-39c7-465d-b258-4588a131f599)
+
 
 ### Estrutura da Página
 

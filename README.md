@@ -172,3 +172,6 @@ Retorna uma string contendo a descrição do erro mais recente ocorrido na conex
 
 ![Cadastro de Categorias 1](https://github.com/user-attachments/assets/0a68a919-392e-4948-bc4c-1773f1a07c88)
 ![Cadastro de Categorias 2](https://github.com/user-attachments/assets/df8370a3-0598-4a8c-9464-182fc437e595)
+
+##Autor
+- Tharllys 

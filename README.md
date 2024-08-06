@@ -157,23 +157,23 @@ Retorna uma string contendo a descrição do erro mais recente ocorrido na conex
 
 ### Pedido de Compra
 
-(![image](https://github.com/user-attachments/assets/faf25626-39c7-465d-b258-4588a131f599)
+![image](https://github.com/user-attachments/assets/faf25626-39c7-465d-b258-4588a131f599)
 
 
 ### Estrutura da Página
 
-(![Captura de tela 2024-08-06 082836](https://github.com/user-attachments/assets/2a394b9a-40d5-44f7-9b02-405c649d67e5)
+![Captura de tela 2024-08-06 082836](https://github.com/user-attachments/assets/2a394b9a-40d5-44f7-9b02-405c649d67e5)
 
 
 ### Cadastro de Marcas
 
-(![Captura de tela 2024-08-06 083114](https://github.com/user-attachments/assets/6ce23b62-8dfb-44cb-8224-ce3ba074043d)
+![Captura de tela 2024-08-06 083114](https://github.com/user-attachments/assets/6ce23b62-8dfb-44cb-8224-ce3ba074043d)
 
 
 ### Cadastro de Categorias
 
-(![Captura de tela 2024-08-06 083344](https://github.com/user-attachments/assets/8f0da0d4-d8d2-4340-8589-58e91b7e9152)
+![Captura de tela 2024-08-06 083344](https://github.com/user-attachments/assets/8f0da0d4-d8d2-4340-8589-58e91b7e9152)
 
 
-##Autor
+## Autor
 - Tharllys 

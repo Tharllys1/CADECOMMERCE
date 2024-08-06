@@ -174,6 +174,10 @@ Retorna uma string contendo a descrição do erro mais recente ocorrido na conex
 
 ![Captura de tela 2024-08-06 083344](https://github.com/user-attachments/assets/8f0da0d4-d8d2-4340-8589-58e91b7e9152)
 
-
+##   Fonte consultada
+- [Documentação do PHP: mysqli_close](https://www.php.net/manual/pt_BR/mysqli.close.php)
+  
 ## Autor
-- Tharllys 
+- Tharllys
+
+  
